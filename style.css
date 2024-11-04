@@ -1,3 +1,9 @@
+* {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
 nav ul {
     display: inline; /* Affiche les éléments de liste en ligne */
     list-style-type: none; /* Supprime les puces de la liste */
@@ -5,26 +11,56 @@ nav ul {
 }
 
 nav li {
-    display: inline; /* Affiche les éléments de liste en ligne */
+    display: inline;
 }
 
 a:hover {
-    font-weight: bold;
-
+    color:limegreen
 }
 
 .navigation_1 {
-    font-size: 18px;
+    font-size: 1.5rem;
+    margin: 10px auto;
+}
+
+.navigation_2 {
+    font-size: 1.33rem;
+}
+.post {
+    margin: 15px;
+}
+.cpr {
+    margin: 5px auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Console";
+    text-shadow: 3px 3px 6px #00000040;
+}
+h2 {
+    list-style-type: none;
+}
+body{
+    min-height: 100vh;
 }
 header{
     text-align: center;
+    width: 90%;
+    margin: 10px auto;
 }
-body{
+
+main{
     text-align: center;
+    width: 66%;
+    margin: 30px auto;
+    padding: 0, 0, 0, 0;
 }
+
 footer {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 10px;
 }
