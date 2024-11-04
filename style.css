@@ -35,6 +35,10 @@ a:hover {
 .ytplayer {
     margin: 10px auto;
 }
+.done {
+    color: #00000040;
+    text-decoration: line-through;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lucida Console";
     text-shadow: 3px 3px 6px #00000040;
