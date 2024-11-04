@@ -32,12 +32,17 @@ a:hover {
 .cpr {
     margin: 5px auto;
 }
+.ytplayer {
+    margin: 10px auto;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lucida Console";
     text-shadow: 3px 3px 6px #00000040;
 }
 h2 {
-    list-style-type: none;
+    font-size: 1.33rem;
+    font-weight: normal;
+    margin: 10px auto;
 }
 body{
     min-height: 100vh;
