@@ -1,0 +1,30 @@
+nav ul {
+    display: inline; /* Affiche les éléments de liste en ligne */
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0;
+}
+
+nav li {
+    display: inline; /* Affiche les éléments de liste en ligne */
+}
+
+a:hover {
+    font-weight: bold;
+
+}
+
+.navigation_1 {
+    font-size: 18px;
+}
+header{
+    text-align: center;
+}
+body{
+    text-align: center;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
