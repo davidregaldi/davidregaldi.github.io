@@ -14,6 +14,10 @@ nav li {
     display: inline;
 }
 
+a:link, a:visited {
+    color: #8a2be2; /* Violet */
+}
+
 a:hover {
     color:limegreen
 }
@@ -41,6 +45,9 @@ a:hover {
 }
 .coffee{
     font-size: 4rem;
+}
+.sheet a{
+    text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lucida Console";
