@@ -28,13 +28,13 @@ h3 {
 }
 
 header {
-    height: 20vh;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 main {
-    height: 73vh;
     text-align: center;
+    margin-top:20px;
 }
 
 main p {
@@ -47,9 +47,12 @@ main p {
 }
 
 footer {
-    height: 6vh;
     text-align: center;
     background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .header-nav {
@@ -95,6 +98,7 @@ footer {
     text-shadow: 3px 3px 6px #00000040;
     background-color:whitesmoke;
 }
+
 .footer-nav a {
     transition: color .2s;
 }
