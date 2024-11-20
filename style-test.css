@@ -112,28 +112,76 @@ footer {
     color: black;
 }
 
+#facebook {
+    background-color: #1877F2;
+    color: white;
+    padding: 0.1em;
+    opacity: 50%;
+    border-radius: 5px;
+}
+
 .footer-nav #facebook:hover {
-    color: #1877F2;
+    opacity: 100%;
+}
+
+#github {
+    background-color: gold;
+    color: black;
+    padding: 0.1em;
+    opacity: 50%;
+    border-radius: 5px;
 }
 
 .footer-nav #github:hover {
-    color: #181717;
+    opacity: 100%
+}
+
+#instagram {
+    background-color: #833AB4;
+    color: black;
+    padding: 0.1em;
+    opacity: 50%;
+    border-radius: 5px;
 }
 
 .footer-nav #instagram:hover {
-    color: #833AB4;
+    opacity: 100%;
+}
+
+#linkedin {
+    background-color: #0A66C2B4;
+    color: white;
+    padding: 0.1em;
+    opacity: 50%;
+    border-radius: 5px;
 }
 
 .footer-nav #linkedin:hover {
-    color: #0A66C2;
+    opacity: 100%;
+}
+
+#soundcloud {
+    background-color: #FF5500;
+    color: white;
+    padding: 0.1em;
+    opacity: 50%;
+    border-radius: 5px;
 }
 
 .footer-nav #soundcloud:hover {
-    color: #FF5500;
+    opacity: 100%;
+}
+
+#youtube {
+    background-color: #FF0000;
+    color: white;
+    padding: 0.1em;
+    opacity: 50%;
+    border-radius: 5px;
 }
 
 .footer-nav #youtube:hover {
-    color: #FF0000;
+    opacity: 100%;
 }
 
 .footer-copyright {
