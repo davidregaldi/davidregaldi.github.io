@@ -291,14 +291,17 @@ footer h3 {
 }
 
 #bio-main {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
+#bio-main > :first-child {
+    margin-bottom: 10px;
+}
+
 #skills {
     font-size:smaller;
-    margin-bottom: 20px;
 }
 
 #html {
@@ -412,6 +415,7 @@ footer h3 {
     background-size:contain;
     background-color:darkkhaki;
     opacity: 80%;
+    margin-bottom: 20px;
 }
 
 @keyframes blink {
