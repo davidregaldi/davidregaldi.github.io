@@ -290,6 +290,129 @@ footer h3 {
     animation: blink 1s infinite;
 }
 
+#bio-main {
+    margin-bottom: 25px;
+}
+
+#skills {
+    font-size:smaller;
+    margin-bottom: 20px;
+}
+
+#html {
+    margin: 4px;
+    padding: 12px 4px;
+    background-color: orange;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+#css {
+    margin: 4px;
+    padding: 12px 9px;
+    background-color: dodgerblue;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 80%;
+    width: 48px;
+    height: 48px;
+}
+
+#javascript {
+    margin: 4px;
+    padding: 12px 13px;
+    background-color: gold;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 80%;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+#react {
+    margin: 4px;
+    padding: 12px 1px;
+    background-color:#333;
+    width: 48px;
+    height: 48px;
+    color: skyblue;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+#node {
+    margin: 4px;
+    padding: 12px 5px;
+    background-color:#8CC84B;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+#python {
+    margin: 4px;
+    padding: 12px 0px;
+    background-color:royalblue;
+    color:gold;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 80%;
+    letter-spacing: -1px;
+}
+
+#composer {
+    margin: 4px;
+    padding: 12px 0px;
+    display: inline-block;
+    height: 48;
+    width: 48;
+    border-radius: 4px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .0);
+    background-image: url('img/logos/composer.png');
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+#synth {
+    margin: 4px;
+    padding: 12px 0px;
+    display: inline-block;
+    height: 48;
+    width: 48;
+    border-radius: 4px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-image: url('img/logos/synth.png');
+    background-position: center;
+    opacity: 80%;
+}
+
+#drums {
+    margin: 4px;
+    padding: 12px 0px;
+    display: inline-block;
+    height: 48;
+    width: 48;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    background-image: url('img/logos/drums.png');
+    background-position: center;
+    background-size:contain;
+    background-color:darkkhaki;
+    opacity: 80%;
+}
+
 @keyframes blink {
     0%, 100% {
         opacity: 1;
