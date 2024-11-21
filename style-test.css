@@ -292,6 +292,8 @@ footer h3 {
 
 #bio-main {
     margin-bottom: 25px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 #skills {
@@ -358,13 +360,12 @@ footer h3 {
 
 #python {
     margin: 4px;
-    padding: 12px 0px;
+    padding: 12px 13px;
     background-color:royalblue;
     color:gold;
     border-radius: 4px;
     font-weight: bold;
     opacity: 80%;
-    letter-spacing: -1px;
 }
 
 #composer {
