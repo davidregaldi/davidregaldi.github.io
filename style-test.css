@@ -310,7 +310,7 @@ footer h3 {
 
 @media screen and (max-width: 800px) {
     .footer-nav a {
-        font-size: smaller;
+        font-size: small;
         letter-spacing: 0px;
     }
 }
