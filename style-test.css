@@ -311,7 +311,11 @@ footer h3 {
     color: black;
     border-radius: 4px;
     font-weight: bold;
-    opacity: 80%;
+    opacity: 66%;
+}
+
+#html:hover {
+    opacity: 100%;
 }
 
 #css {
@@ -321,9 +325,13 @@ footer h3 {
     color: black;
     border-radius: 4px;
     font-weight: bold;
-    opacity: 80%;
+    opacity: 66%;
     width: 48px;
     height: 48px;
+}
+
+#css:hover {
+    opacity: 100%;
 }
 
 #javascript {
@@ -333,10 +341,14 @@ footer h3 {
     color: black;
     border-radius: 4px;
     font-weight: bold;
-    opacity: 80%;
+    opacity: 66%;
     width: 48px;
     height: 48px;
     text-align: center;
+}
+
+#javascript:hover {
+    opacity: 100%;
 }
 
 #react {
@@ -348,7 +360,12 @@ footer h3 {
     color: skyblue;
     border-radius: 4px;
     font-weight: bold;
-    opacity: 80%;
+    opacity: 66%;
+}
+
+#react:hover {
+    opacity: 100%;
+
 }
 
 #node {
@@ -358,7 +375,11 @@ footer h3 {
     color: whitesmoke;
     border-radius: 4px;
     font-weight: bold;
-    opacity: 80%;
+    opacity: 66%;
+}
+
+#node:hover {
+    opacity: 100%;
 }
 
 #python {
@@ -368,7 +389,11 @@ footer h3 {
     color:gold;
     border-radius: 4px;
     font-weight: bold;
-    opacity: 80%;
+    opacity: 66%;
+}
+
+#python:hover {
+    opacity: 100%;
 }
 
 #composer {
@@ -379,12 +404,17 @@ footer h3 {
     width: 48;
     border-radius: 4px;
     font-weight: bold;
-    color: rgba(0, 0, 0, .0);
+    color: rgba(0, 0, 0, 0);
     background-image: url('img/logos/composer.png');
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
-    opacity: 80%;
+    background-color: cadetblue;
+    opacity: 66%;
+}
+
+#composer:hover {
+    opacity: 100%;
 }
 
 #synth {
@@ -398,7 +428,11 @@ footer h3 {
     color: whitesmoke;
     background-image: url('img/logos/synth.png');
     background-position: center;
-    opacity: 80%;
+    opacity: 66%;
+}
+
+#synth:hover {
+    opacity: 100%;
 }
 
 #drums {
@@ -414,8 +448,12 @@ footer h3 {
     background-position: center;
     background-size:contain;
     background-color:darkkhaki;
-    opacity: 80%;
+    opacity: 66%;
     margin-bottom: 30px;
+}
+
+#drums:hover {
+    opacity: 100%;
 }
 
 @keyframes blink {
