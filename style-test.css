@@ -18,6 +18,10 @@ h1 {
 
 }
 
+h2 {
+    margin-bottom: 8px;
+}
+
 h3 {
     font-family: 'Courier New', monospace;
     text-shadow: 3px 3px 6px #00000040;
@@ -29,12 +33,12 @@ h3 {
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 main {
     text-align: center;
-    margin-top:40px;
+    margin-bottom: 64px;
 }
 
 main p {
@@ -43,16 +47,16 @@ main p {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
-    padding-bottom: 0;
 }
 
 footer {
     text-align: center;
     background-color: white;
-    position: fixed;
-    bottom: 4px;
+    position:fixed;
+    bottom: 0;
     left: 0;
     right: 0;
+    padding-bottom: 4px;
 }
 
 footer h3 {
@@ -87,6 +91,39 @@ footer h3 {
     font-size:medium;
     letter-spacing: 1px;
 
+}
+
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container article {
+    padding-bottom: 8px;
+}
+
+.container article img {
+    border: 1px solid ;
+    border-color: rgba(0, 0, 0, .33);
+    opacity: 67%;
+}
+
+.container article img:hover {
+    opacity: 100%;
+    border-color: rgba(0, 0, 0, 1);
+    transition: opacity 0.3s;
+}
+
+.container article p.album, .container article p.year{
+    opacity: 50%;
+}
+
+.done {
+    color: #00000040;
+    text-decoration: line-through;
 }
 
 #contact {
@@ -481,7 +518,6 @@ footer h3 {
         letter-spacing: 0px;
     }
 }
-
 
 
 
