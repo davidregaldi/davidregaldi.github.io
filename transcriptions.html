@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davidregaldi.github.io</title>
     <link rel="stylesheet" href="style-test.css">
+    <style>
+    #hiddenText {
+        display: none;
+    }
+    </style>
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -24,7 +29,15 @@
         <div class="post">
             <h2>Download My Drumsheets</h2>
             <p>The PDF files are not free anymore, sorry for that, however they won't cost you more than a small coffee and this helps me a lot. <3</p>
-            <p>Price is free if you tip me in ₿itcoin: <a href="mailto:david.regaldi@gmail.com">Contact me</a></p>
+            <p>Price is free if you tip me in ₿itcoin: 
+                <button onclick="drawText()">Reveal</button>
+                <p id="hiddenText">Tell me the PDF you want here: david.regaldi@gmail.com & Tip me here: bc1qukhk8vr5q4nqk25y48skuh4rtqdlazpvyyeuyw</p>
+                <script>
+                    function drawText() {
+                    var texte = document.getElementById("hiddenText");
+                    texte.style.display = "block"; // Affiche le texte
+                    }
+                </script></p>
             <br>
             <p class="sheet"><a href="https://py.pl/1ecxyY" target="_blank">Alain Bashung - La Nuit je Mens (1998, Fantasie Militaire)</a></p>
             <p class="sheet"><a href="https://py.pl/4XXvH" target="_blank">Archive - Whore (2009, Controlling Crowds)</a></p>
