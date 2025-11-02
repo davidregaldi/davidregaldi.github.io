@@ -262,7 +262,7 @@ footer h3 {
 }
 
 #typing-container2 {
-    width: 468px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -297,7 +297,7 @@ footer h3 {
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
-    animation: typing 1.025s steps(41) forwards;
+    animation: typing 1.025s steps(50) forwards;
     animation-delay: 1.30s;
 }
 
@@ -307,7 +307,7 @@ footer h3 {
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
-    animation: typing 0.55s steps(12) forwards;
+    animation: typing 0.55s steps(48) forwards;
     animation-delay: 2.325s;
     margin-bottom: 20px;
 }
