@@ -256,7 +256,7 @@ footer h3 {
 }
 
 #typing-container1 {
-    width: 460px;
+    width: 420px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -268,7 +268,7 @@ footer h3 {
 }
 
 #typing-container3 {
-    width: 400px;
+    width: 380px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -286,7 +286,7 @@ footer h3 {
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
-    animation: typing 1.15s steps(49) forwards;
+    animation: typing 1.15s steps(42) forwards;
     animation-delay: .15s;
 
 }
@@ -307,7 +307,7 @@ footer h3 {
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
-    animation: typing 0.55s steps(48) forwards;
+    animation: typing 0.55s steps(46) forwards;
     animation-delay: 2.325s;
     margin-bottom: 20px;
 }
