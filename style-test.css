@@ -7,7 +7,12 @@ a {
 }
 
 a:hover {
+    color: limegreen;
     text-decoration: underline;
+}
+
+a:visited {
+    color: black;
 }
 
 h1 {
