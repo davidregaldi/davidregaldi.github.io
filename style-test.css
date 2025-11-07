@@ -4,7 +4,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: purple;
 }
 
 a:hover {
@@ -13,7 +13,7 @@ a:hover {
 }
 
 a:visited {
-    color: black;
+    color: purple;
 }
 
 h1 {
