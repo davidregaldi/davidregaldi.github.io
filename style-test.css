@@ -7,13 +7,13 @@ a {
     color: purple;
 }
 
+a:visited {
+    color: purple;
+}
+
 a:hover {
     color: limegreen;
     text-decoration: underline;
-}
-
-a:visited {
-    color: purple;
 }
 
 h1 {
