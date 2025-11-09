@@ -73,6 +73,10 @@ footer h3 {
     margin-bottom: 20px;
 }
 
+.header-nav .active {
+    text-decoration: underline;
+}
+
 .header-nav a {
     margin-left: 4px;
     margin-right: 4px;
