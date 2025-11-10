@@ -32,19 +32,8 @@
     <main>
         <div class="post">
             <p>Most of files are not free anymore, sorry for that, however they won't cost you more than a small coffee and this helps me a lot. <3</p>
-            <p>Choose a fair price if you tip me in <b class="bitcoin">₿itcoin</b>: 
-                <button onclick="drawText()">Reveal</button>
-                <p id="hiddenText">Tell me the PDF you want here: david.regaldi@gmail.com & Tip here: bc1qukhk8vr5q4nqk25y48skuh4rtqdlazpvyyeuyw</p>
-                <script>
-                    function drawText() {
-                    var texte = document.getElementById("hiddenText");
-                    texte.style.display = "block"; // Affiche le texte
-                    }
-                </script>
-                </p>
-                <button onclick="revealBitcoin()">Reveal Bitcoin Tip</button>
+            <p>Choose a fair price if you tip me in <b class="bitcoin">₿itcoin</b>: <button onclick="revealBitcoin()">Reveal Tip</button></p>
                 <p id="hiddenText" style="display: none;"></p>
-                
                 <script>
                 function revealBitcoin() {
                     const text = `Tell me the PDF you want: 
