@@ -5,32 +5,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://davidregaldi.github.io/</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://davidregaldi.github.io/bio.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://davidregaldi.github.io/code.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://davidregaldi.github.io/music.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://davidregaldi.github.io/synthpresets.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://davidregaldi.github.io/transcriptions.html</loc>
-    <lastmod>2025-11-13</lastmod>
+    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
 </urlset>
