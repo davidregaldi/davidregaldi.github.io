@@ -27,6 +27,45 @@
     #hiddenText {
         display: none;
     }
+    /* Style pour l'aperçu d'image au survol */
+    .sheet a {
+        position: relative;
+        cursor: pointer;
+    }
+    .sheet-preview {
+        position: fixed;
+        z-index: 1000;
+        display: none;
+        pointer-events: none;
+        background: white;
+        border: 2px solid #333;
+        border-radius: 4px;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        max-width: 200px;
+        width: 200px;
+        box-sizing: border-box;
+        opacity: 0.8;
+    }
+    @media (max-width: 768px) {
+        .sheet-preview {
+            max-width: 90vw;
+            width: 90vw;
+        }
+        .sheet-preview img {
+            max-width: 100%;
+        }
+    }
+    .sheet-preview img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 2px;
+    }
+    .sheet a:hover .sheet-preview {
+        display: block;
+    }
     </style>
 <!-- JSON-LD : Partitions payantes -->
 <script type="application/ld+json">
@@ -911,6 +950,84 @@
                     document.getElementById("hiddenText").style.display = "block";
                 }
                 </script>
+            <script>
+                // Fonction pour générer le nom du fichier thumbnail à partir du texte du lien
+                function getThumbnailFilename(text) {
+                    // Mapping des noms de partitions vers les noms de fichiers
+                    const mapping = {
+                        'Alain Bashung': 'AlainBashung-LaNuitJeMens-Small.png',
+                        'Archive': 'Archive-Whore-Small.png',
+                        'Axel Bauer': 'AxelBauer-Cargo-Small.png',
+                        'Dead Can Dance': 'DeadCanDance-ChildrenOfTheSun-Small.png',
+                        'Deftones': 'Deftones-Passenger-Small.png',
+                        'Ed Sheeran': 'EdSheeran-Blow-Small.png',
+                        'Eric Clapton': 'EricClapton-Cocaine-Small.png',
+                        'Fairy Tail': 'FairyTail-OuvertureThemeSong-Small.png',
+                        'Francis Cabrel': 'FrancisCabrel-Animal-Small.png',
+                        'Frank Carter': 'FrankCarter-Supervillain-Small.png',
+                        'Hubert-Félix Thiéfaine': 'HubertFelixThiéfaine-SoleilChercheFutur-Small.png',
+                        'Jamiroquai': 'Jamiroquai-KingForADay-Small.png',
+                        'Leprous': 'Leprous-LikeASunkunShip-Small.png',
+                        'Maneskin': 'Maneskin-TheLoneliest-Small.png',
+                        'Papooz': 'Papooz-TheatricalStateOfMind-Small.png',
+                        'Prodigy': 'Prodigy-Mindfields-Small.png',
+                        'Rammstein': 'Rammstein-Sonne-Small.png',
+                        'Rendezvous Point': 'RendezvousPoint-TheConclusionPart1-Small.png',
+                        'The Clash': 'TheClash-TheGunsOfBrixton-Small.png',
+                        'The Raconteurs': 'TheRaconteurs-TopYourself-Small.png',
+                        'Tracy Chapman': 'TracyChapman-GiveMeOneReason-Small.png',
+                        'Twenty One Pilots': 'TwentyOnePilots-Chlorine-Small.png',
+                        'Groundation': 'Groundation-TheDreamer-Small.png',
+                        'Primus': 'Primus-Antipop-Small.png',
+                        'Shaka Ponk': 'ShakaPonk-MysteriousWays-Small.png'
+                    };
+                    
+                    // Chercher le mapping correspondant
+                    for (const [key, filename] of Object.entries(mapping)) {
+                        if (text.includes(key)) {
+                            return filename;
+                        }
+                    }
+                    return null;
+                }
+                
+                // Ajouter les aperçus d'image à tous les liens de partitions
+                document.addEventListener('DOMContentLoaded', function() {
+                    const sheetLinks = document.querySelectorAll('.sheet a');
+                    
+                    sheetLinks.forEach(function(link) {
+                        const linkText = link.textContent.trim();
+                        const filename = getThumbnailFilename(linkText);
+                        
+                        if (filename) {
+                            const preview = document.createElement('div');
+                            preview.className = 'sheet-preview';
+                            const img = document.createElement('img');
+                            img.src = 'img/thumbnails/' + filename;
+                            img.alt = linkText;
+                            img.onerror = function() {
+                                preview.style.display = 'none';
+                            };
+                            preview.appendChild(img);
+                            link.appendChild(preview);
+                            
+                            // Suivre la position de la souris pour positionner l'image
+                            link.addEventListener('mouseenter', function() {
+                                preview.style.display = 'block';
+                            });
+                            
+                            link.addEventListener('mousemove', function(e) {
+                                preview.style.left = e.pageX + 'px';
+                                preview.style.top = e.pageY + 'px';
+                            });
+                            
+                            link.addEventListener('mouseleave', function() {
+                                preview.style.display = 'none';
+                            });
+                        }
+                    });
+                });
+            </script>
             <h2>Download My Drum Sheets</h2>
             <p>The links have been updated and are now fully functional. Additional ones will follow in the coming days.</p>
             <br>
