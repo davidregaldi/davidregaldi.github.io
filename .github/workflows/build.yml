@@ -28,5 +28,5 @@ jobs:
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: "Auto-build: Update content (articles & tour dates)"
-        file_pattern: articles.html tourdates.html
+        commit_message: "Auto-build: Update content (tour dates)"
+        file_pattern: tourdates.html
