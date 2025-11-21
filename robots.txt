@@ -1,6 +1,6 @@
 # Autoriser tous les robots à explorer le site
 User-agent: *
-Disallow:
+Allow: /
 
 # Emplacement du sitemap
-Sitemap: https://davidregaldi.github.io/sitemap.xml
+Sitemap: https://davidregaldi.github.io/sitemap/sitemap.xml
