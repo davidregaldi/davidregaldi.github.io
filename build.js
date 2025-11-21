@@ -89,7 +89,7 @@ function generatePage(txtFilename, htmlFilename, placeholder, containerId, rende
         const lastUpdatedPlaceholder = '<!-- LAST_UPDATED -->';
         if (htmlContent.includes(lastUpdatedPlaceholder)) {
             const now = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' };
             const dateStr = now.toLocaleDateString('fr-FR', options);
             // We replace the placeholder AND keep it for next time? 
             // Or we use a regex to replace the content inside the tag?
