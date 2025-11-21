@@ -1,11 +1,5 @@
 <!-- Format: DD/MM/YYYY, Nom du groupe, Salle/Event, Adresse, Statut, Saut de ligne -->
 
-30/08/2026
-Prout
-prout de test
-test de prout
-Confirmé
-
 29/08/2026
 Mad in Ska
 Festival Festi'Beugnon
