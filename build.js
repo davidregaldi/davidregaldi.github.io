@@ -85,6 +85,31 @@ function generatePage(txtFilename, htmlFilename, placeholder, containerId, rende
             }
         }
 
+        // Update Last Updated Timestamp if placeholder exists
+        const lastUpdatedPlaceholder = '<!-- LAST_UPDATED -->';
+        if (htmlContent.includes(lastUpdatedPlaceholder)) {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const dateStr = now.toLocaleDateString('fr-FR', options);
+            // We replace the placeholder AND keep it for next time? 
+            // Or we use a regex to replace the content inside the tag?
+            // The user might want it to update every time. 
+            // If we just replace the placeholder, it's gone.
+            // Let's use a regex to replace the content of the h2 with id="last-updated" OR just replace the placeholder if we want to keep it simple but we need to keep the placeholder.
+            // Actually, let's use a marker approach for this too, or just a regex on the specific ID.
+
+            // Simpler: Just replace the content of the placeholder with "Mise à jour le ... <!-- LAST_UPDATED -->" so it persists?
+            // Or better: Use a regex to find the h2 and replace its content.
+
+            const timestampRegex = /(<h2 id="last-updated"[^>]*>)([\s\S]*?)(<\/h2>)/;
+            if (timestampRegex.test(htmlContent)) {
+                htmlContent = htmlContent.replace(timestampRegex, `$1Mise à jour le ${dateStr} <!-- LAST_UPDATED -->$3`);
+            } else if (htmlContent.includes(lastUpdatedPlaceholder)) {
+                // Fallback if regex fails but placeholder is there (e.g. first run)
+                htmlContent = htmlContent.replace(lastUpdatedPlaceholder, `Mise à jour le ${dateStr} <!-- LAST_UPDATED -->`);
+            }
+        }
+
         fs.writeFileSync(htmlPath, htmlContent, 'utf8');
         console.log(`Successfully built ${htmlFilename}`);
 
