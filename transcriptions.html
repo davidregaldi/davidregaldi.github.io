@@ -869,8 +869,8 @@
             'Archive': 'Archive-Whore-Small.png',
             'Axel Bauer': 'AxelBauer-Cargo-Small.png',
             'Dead Can Dance': 'DeadCanDance-ChildrenOfTheSun-Small.png',
-            'Deftones': 'Deftones-Change-Small.png',
-            'Deftones': 'Deftones-Passenger-Small.png',
+            'Deftones - Change': 'Deftones-Change-Small.png',
+            'Deftones & Meynard J. - Passenger': 'Deftones-Passenger-Small.png',
             'Détroit': 'Détroit-LeCreuxDeTaMain-Small.png',
             'Ed Sheeran': 'EdSheeran-Blow-Small.png',
             'Eric Clapton': 'EricClapton-Cocaine-Small.png',
@@ -909,7 +909,7 @@
           const sheetLinks = document.querySelectorAll('.sheet a');
 
           sheetLinks.forEach(function (link) {
-            const linkText = link.textContent.trim();
+            const linkText = link.textContent.replace(/\s+/g, ' ').trim();
             const filename = getThumbnailFilename(linkText);
 
             if (filename) {
