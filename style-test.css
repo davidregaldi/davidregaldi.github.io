@@ -679,3 +679,24 @@ footer h3 {
 .copy-btn-dark:hover {
     background-color: black;
 }
+
+.bitcoin {
+    color: #F7931A;
+    font-weight: bold;
+}
+
+.bitcoin-coin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.33em;
+    height: 1.33em;
+    border-radius: 50%;
+    cursor: default;
+    background-color: rgb(247, 147, 26);
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 0.8em;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    vertical-align: middle;
+}
