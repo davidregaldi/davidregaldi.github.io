@@ -784,6 +784,9 @@
       <a href="synthpresets.html" title="Synth Presets" id="synthpresets">SynthPresets</a>
       <a href="transcriptions.html" title="Transcriptions" id="transcriptions"><span
           class="active">Transcriptions</span></a>
+      <div id="dark-mode-toggle" title="Toggle Dark Mode">
+        <span class="daw-icon">☾</span>
+      </div>
     </nav>
     <h3><a href="#" title="Contact Me" id="contact">Contact</a></h3>
   </header>
@@ -931,8 +934,8 @@
               });
 
               link.addEventListener('mousemove', function (e) {
-                preview.style.left = e.pageX + 'px';
-                preview.style.top = e.pageY + 'px';
+                preview.style.left = (e.pageX + 15) + 'px';
+                preview.style.top = (e.pageY + 15) + 'px';
               });
 
               link.addEventListener('mouseleave', function () {
