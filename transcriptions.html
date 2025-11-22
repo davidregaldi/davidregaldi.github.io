@@ -791,21 +791,28 @@
     <div class="post">
       <p>Most of files are not free anymore, sorry for that, however they won't cost you more than a small coffee and
         this helps me a lot. 💚</p>
-      <p>Choose your fair price if you tip me in <b class="bitcoin">₿itcoin</b>: <button
-          onclick="revealBitcoin()">REVEAL</button></p>
+      <p>Choose your fair price if you tip me in <b class="bitcoin">₿itcoin</b>: <button class="reveal-btn"
+          onclick="revealBitcoin(this)">REVEAL</button></p>
       <p id="hiddenText" style="display: none;"></p>
       <script>
-        function revealBitcoin() {
-          const text = `Tell me the PDF you want: 
+        function revealBitcoin(btn) {
+          const hiddenText = document.getElementById("hiddenText");
+          if (hiddenText.style.display === "none") {
+            const text = `<div class="reveal-text">Tell me the PDF you want: 
                     <a href="mailto:david.regaldi@gmail.com">david.regaldi@gmail.com</a> & 
                     Tip here: 
                     <a href="https://mempool.space/address/3GPTV5XBhEsFRXiuBADTxPY2nafaG8JZhU" 
                        target="_blank" 
                        rel="nofollow">
                        3GPTV5XBhEsFRXiuBADTxPY2nafaG8JZhU
-                    </a><br>Since everything is done manually, it may take me some time to send you the files when you pay with ₿itcoin (anywhere from a few minutes to a few hours)`;
-          document.getElementById("hiddenText").innerHTML = text;
-          document.getElementById("hiddenText").style.display = "block";
+                    </a><br>Since everything is done manually, it may take me some time to send you the files when you pay me using <b class="bitcoin">₿</b>.</div>`;
+            hiddenText.innerHTML = text;
+            hiddenText.style.display = "block";
+            btn.textContent = "HIDE";
+          } else {
+            hiddenText.style.display = "none";
+            btn.textContent = "REVEAL";
+          }
         }
       </script>
       <script>
