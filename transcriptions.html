@@ -805,7 +805,9 @@
                        target="_blank" 
                        rel="nofollow">
                        3GPTV5XBhEsFRXiuBADTxPY2nafaG8JZhU
-                    </a><br>Since everything is done manually, it may take me some time to send you the files when you pay me using <b class="bitcoin">₿</b>.</div>`;
+                    </a>
+                    <button class="copy-btn" onclick="copyToClipboard('3GPTV5XBhEsFRXiuBADTxPY2nafaG8JZhU', this)" title="Copy to clipboard">📋</button>
+                    <br>Since everything is done manually, it may take me some time to send you the files when you pay me using <b class="bitcoin">₿</b>.</div>`;
             hiddenText.innerHTML = text;
             hiddenText.style.display = "block";
             btn.textContent = "HIDE";
@@ -813,6 +815,34 @@
             hiddenText.style.display = "none";
             btn.textContent = "REVEAL";
           }
+        }
+
+        function copyToClipboard(text, btn) {
+          navigator.clipboard.writeText(text).then(function () {
+            const originalText = btn.textContent;
+            btn.textContent = '✅';
+            setTimeout(() => {
+              btn.textContent = originalText;
+            }, 2000);
+          }, function (err) {
+            console.error('Could not copy text: ', err);
+            // Fallback for older browsers
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+              document.execCommand('copy');
+              const originalText = btn.textContent;
+              btn.textContent = '✅';
+              setTimeout(() => {
+                btn.textContent = originalText;
+              }, 2000);
+            } catch (err) {
+              console.error('Fallback: Oops, unable to copy', err);
+            }
+            document.body.removeChild(textArea);
+          });
         }
       </script>
       <script>

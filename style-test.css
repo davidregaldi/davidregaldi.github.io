@@ -70,6 +70,14 @@ main ul li {
     padding-top: 0;
 }
 
+main p {
+    font-family: 'Courier New', monospace;
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 footer {
     text-align: center;
     background-color: white;
@@ -586,4 +594,26 @@ footer h3 {
 
 .reveal-text {
     margin-top: 10px;
+}
+
+.copy-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 6px;
+    margin-left: 8px;
+    font-size: 0.8em;
+    transition: all 0.2s;
+    vertical-align: middle;
+}
+
+.copy-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+    transform: scale(1.05);
+}
+
+.copy-btn:active {
+    transform: scale(0.95);
 }
