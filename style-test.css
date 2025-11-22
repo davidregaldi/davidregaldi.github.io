@@ -58,6 +58,10 @@ main .post p {
     padding-top: 0;
 }
 
+main .post p strong {
+    font-weight: normal;
+}
+
 main ul li {
     font-family: 'Courier New', monospace;
     letter-spacing: -1px;
