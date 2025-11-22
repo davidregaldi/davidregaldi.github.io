@@ -806,8 +806,8 @@
                        rel="nofollow">
                        3GPTV5XBhEsFRXiuBADTxPY2nafaG8JZhU
                     </a>
-                    <button class="copy-btn" onclick="copyToClipboard('3GPTV5XBhEsFRXiuBADTxPY2nafaG8JZhU', this)" title="Copy to clipboard">📋</button>
-                    <br>Since everything is done manually, it may take me some time to send you the files when you pay me using <b class="bitcoin">₿</b>.</div>`;
+                    <button class="copy-btn-text" onclick="copyToClipboard('3GPTV5XBhEsFRXiuBADTxPY2nafaG8JZhU', this)" title="Copy to clipboard">COPY</button>
+                    <br>Since everything is done manually, it may take me some time to send you the files when you pay using <b class="bitcoin">₿</b>.</div>`;
             hiddenText.innerHTML = text;
             hiddenText.style.display = "block";
             btn.textContent = "HIDE";
@@ -820,13 +820,21 @@
         function copyToClipboard(text, btn) {
           navigator.clipboard.writeText(text).then(function () {
             const originalText = btn.textContent;
-            btn.textContent = '✅';
+            const originalBg = btn.style.backgroundColor;
+            const originalColor = btn.style.color;
+
+            btn.textContent = 'COPIED';
+            btn.style.backgroundColor = '#dff0d8'; // Light green
+            btn.style.color = 'black';
+
             setTimeout(() => {
               btn.textContent = originalText;
+              btn.style.backgroundColor = originalBg;
+              btn.style.color = originalColor;
             }, 2000);
           }, function (err) {
             console.error('Could not copy text: ', err);
-            // Fallback for older browsers
+            // Fallback
             const textArea = document.createElement("textarea");
             textArea.value = text;
             document.body.appendChild(textArea);
@@ -834,9 +842,16 @@
             try {
               document.execCommand('copy');
               const originalText = btn.textContent;
-              btn.textContent = '✅';
+              const originalBg = btn.style.backgroundColor;
+
+              btn.textContent = 'COPIED';
+              btn.style.backgroundColor = '#dff0d8';
+              btn.style.color = 'black';
+
               setTimeout(() => {
                 btn.textContent = originalText;
+                btn.style.backgroundColor = originalBg;
+                btn.style.color = '';
               }, 2000);
             } catch (err) {
               console.error('Fallback: Oops, unable to copy', err);
@@ -928,10 +943,11 @@
       </script>
       <h1 class="realTitle">Download My Drum Sheets</h1>
       <p>
-        Welcome to my collection of <strong>accurate drum transcriptions</strong>.<br>
+        Welcome to my collection of <strong>drum transcriptions</strong>.<br>
         Here you can find high-quality <strong>drum sheet music</strong> for various genres including Rock, Prog, Funk,
         and Metal. <br>
-        All scores are transcribed with passion and precision.<br><br>
+        All scores are transcribed with <strong>passion and precision</strong>, featuring <strong>colors and
+          stickings</strong> to make reading easier.<br><br>
       </p>
       <p>
         Last update: <time datetime="2025-11-22">22 November 2025</time>, <b>28</b> indexed drum sheets.
