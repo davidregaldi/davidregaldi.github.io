@@ -1,16 +1,10 @@
 <!-- Format: DD/MM/YYYY, Nom du groupe, Salle/Event, Adresse, Statut, Saut de ligne -->
 
-29/08/2026
-Mad in Ska
-Festival Festi'Beugnon
-Grand'Combe-Chateleau France
-En attente
-
 28/08/2026
 Mad in Ska
 Festival Festi'Beugnon
 Grand'Combe-Chateleau France
-En attente
+Confirmé
 
 14/08/2026
 Mad in Ska
@@ -58,7 +52,7 @@ Confirmé
 Impressive Burricos de la Playa
 Concert privé
 Crissey(39) France
-En attente
+Confirmé
 
 24/05/2026
 Mad in Ska
