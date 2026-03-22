@@ -1,5 +1,11 @@
 <!-- Format: DD/MM/YYYY, Nom du groupe, Salle/Event, Adresse, Statut, Saut de ligne -->
 
+05/09/1016
+Mad in Ska
+Halles de Louhans
+Louans
+En attente
+
 28/08/2026
 Mad in Ska
 Festival Festi'Beugnon
