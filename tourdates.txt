@@ -1,10 +1,10 @@
 <!-- Format: DD/MM/YYYY, Nom du groupe, Salle/Event, Adresse, Statut, Saut de ligne -->
 
-05/09/1016
+05/09/2026
 Mad in Ska
 Halles de Louhans
-Louans
-à confirmer
+Louhans
+En attente
 
 28/08/2026
 Mad in Ska
